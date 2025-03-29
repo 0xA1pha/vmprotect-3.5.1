@@ -11,7 +11,7 @@ jobs:
       uses: seanmiddleditch/gha-setup-vsdevenv@master
     - name: Install Qt
       run: |
-        pip install aqtinstall
+        pip install aqtinstall==2.1.0
         mkdir Qt
         cd Qt
         aqt install-qt windows desktop 5.12.12 win32_msvc2017
